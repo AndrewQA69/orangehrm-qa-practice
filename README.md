@@ -1,1 +1,1 @@
-# orangehrm-qa-practice
+# spotify-qa-practice
