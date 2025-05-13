@@ -1,1 +1,16 @@
+Test Cases – Spotify QA
 
+API Test Cases
+
+ID    / Name   /                                   Pre conditions              / Test data                                / Steps                                                                                                     /Expected result      /Type
+TC1   / Отримання інформації про користувача /     Користувач повинен             email: andriydroshchak1012@gmail.com      1.У розділі Authorization авторизуватися та скопіювати токен                                              200 OK                Positive
+                                                   бути зареєстрований            Token: BQDiT...DrOfQ8lOTWA0ltpg           2.У розділі Headers обрати метод Get, вставити посилпння https://api.spotify.com/v1/me і токен
+                                                   в системі                      https://api.spotify.com/v1/me             3. натиснути Send та отримати відповідь
+
+ID    / Name   /                                   Pre conditions              / Test data                                / Steps                                                                                                      /Expected result      /Type
+TC2   / відмова без токена /                       без токена                      https://api.spotify.com/v1/me            1.У розділі Headers обрати метод Get, вставити посилання https://api.spotify.com/v1/me без токену          401                   Negative
+                                                                                                                            2. натиснути Send та отримати відповідь
+                                                                                                                            
+ID    / Name   /                                   Pre conditions              / Test data                                / Steps                                                                                                      /Expected result      /Type
+TC3   / невалідний токен /                         неіснуючий токен                 https://api.spotify.com/v1/me           1.У розділі Headers обрати метод Get, вставити посилання https://api.spotify.com/v1/me та неісну.чий токен  401                   Negative
+                                                                                                                            2. натиснути Send та отримати відповідь
