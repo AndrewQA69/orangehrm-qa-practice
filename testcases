@@ -14,3 +14,11 @@ TC2   / відмова без токена /                       без ток
 ID    / Name   /                                   Pre conditions              / Test data                                / Steps                                                                                                      /Expected result      /Type
 TC3   / невалідний токен /                         неіснуючий токен                 https://api.spotify.com/v1/me           1.У розділі Headers обрати метод Get, вставити посилання https://api.spotify.com/v1/me та неісну.чий токен  401                   Negative
                                                                                                                             2. натиснути Send та отримати відповідь
+
+
+
+
+
+ID    / Name   /                                   Pre conditions              / Test data                                                          / Steps                                                                                                                  /Expected result                      /Type
+TC4   / пошук треку за назвою /                    токен                            https://api.spotify.com/v1/search?q=Imagine&type=track           1.У розділі Headers обрати метод Get, вставити посилання https://api.spotify.com/v1/search?q=Imagine&type=track          200+масив з треками                   Positive
+                                                                                                                                                     2. натиснути Send та отримати відповідь
