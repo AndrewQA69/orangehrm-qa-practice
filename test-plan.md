@@ -14,6 +14,7 @@ Spotify Web Player: [https://open.spotify.com](https://open.spotify.com)
 Отримання списку плейлистів (`GET /me/playlists`)
 
  Spotify Web
+ 
 Логін
 Пошук треків
 Відтворення музики
