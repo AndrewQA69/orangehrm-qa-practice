@@ -7,13 +7,13 @@ Spotify Web Player: [https://open.spotify.com](https://open.spotify.com)
 - Spotify Web API: [https://developer.spotify.com/documentation/web-api](https://developer.spotify.com/documentation/web-api)
 
 Що і як будемо тестувати: 
- Spotify API
+ -Spotify API
 Авторизація (`GET /me`)
 Отримання профілю користувача
 Пошук треків (`GET /search`)
 Отримання списку плейлистів (`GET /me/playlists`)
 
- Spotify Web
+ -Spotify Web
  
 Логін
 Пошук треків
